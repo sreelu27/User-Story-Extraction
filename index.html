@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+	<title>User Stories</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+  <body style="background-color:#76D7C4">
+  	<div class="container">
+	<h1 align="center"><i>User Stories Extracted From Online User Reviews</i></h1>
+  	<table border = 3 class="table table-striped table table-hover">
+  	  <tr>
+  	  	<th>Actors</th>
+   		<th>User Stories</th>
+  	  </tr>
+  	{% for your_list_element in finallist %}
+  	  <tr>
+         <td> User </td>
+         <td> {{ your_list_element }}  </td>
+      </tr>
+ 	 {% endfor %}
+  </table>
+  </div>
+  <h5 align="center">Created by Sreelekshmi Geetha</h5>
+  </body>
+</html>
